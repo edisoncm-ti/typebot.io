@@ -65,8 +65,8 @@ const nextConfig = {
         source: '/(.*)?',
         headers: [
           {
-            key: 'X-Frame-Options',
-            value: 'SAMEORIGIN',
+            key: "Content-Security-Policy",
+            value: "frame-ancestors 'self' https://app.botplan.com.br https://chat.botplan.com.br https://app.chatplan.com.br;",
           },
         ],
       },
