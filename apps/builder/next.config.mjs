@@ -65,8 +65,24 @@ const nextConfig = {
         source: '/(.*)?',
         headers: [
           {
+            key: 'Access-Control-Allow-Credentials',
+            value: 'true',
+          },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: 'https://*.botplan.com.br https://*.chatplan.com.br https://*.whatsplan.com.br https://*.sacplan.com.br',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET,OPTIONS,PATCH,DELETE,POST,PUT',
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'X-CSRF-Token, X-Requested-With, X-HTTP-Method-Override, Content-Type, Accept, Authorization',
+          },
+          {
             key: "Content-Security-Policy",
-            value: "frame-ancestors 'self' https://*.botplan.com.br https://*.chatplan.com.br https://*.whatsplan.com.br https://*.sacplan.com.br;"
+            value: "frame-ancestors 'self' https://*.botplan.com.br https://*.chatplan.com.br https://*.whatsplan.com.br https://*.sacplan.com.br;",
           },
         ],
       },
