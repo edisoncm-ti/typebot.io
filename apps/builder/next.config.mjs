@@ -66,7 +66,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value: "frame-ancestors 'self' https://app.botplan.com.br https://chat.botplan.com.br https://app.chatplan.com.br;",
+            value: "frame-ancestors 'self' https://app.botplan.com.br https://chat.botplan.com.br https://app.chatplan.com.br https://tbt.chatplan.com.br;",
           },
         ],
       },
